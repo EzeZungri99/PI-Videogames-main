@@ -5,7 +5,7 @@ const allGamesBdd = require("./allGamesBdd.js")
 const idApiOrBdd = async(id, source) => {
   
   const axel = source === "api"
-  ? (await axios(`https://api.rawg.io/api/games/${id}?key=38fb902304f94ef6a139f69ea8c6ff19`)).data
+  ? (await axios(`https://api.rawg.io/api/games/${id}?key=38fb902304f94ef6a139f69ea8c6ff19`)).data 
   : await allGamesBdd(id)
 
   console.log(idApiOrBdd)

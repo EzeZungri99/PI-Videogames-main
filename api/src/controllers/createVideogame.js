@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require('uuid');
 
 const createVideogame = async (req, res) => {
   try {
-    const { name, rating, description, image, platforms, released, genres } = req.body;
+    const { name, rating, description, background_image,image, platforms, released, genres } = req.body;
 
     // Generar un nuevo UUID para el ID del videojuego
     const id = uuidv4();
@@ -18,6 +18,7 @@ const createVideogame = async (req, res) => {
       name,
       rating,
       description,
+      background_image,
       image,
       platforms:plataformas,
       released,

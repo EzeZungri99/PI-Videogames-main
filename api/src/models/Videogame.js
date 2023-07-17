@@ -16,6 +16,7 @@ module.exports = (sequelize) => {
     name: { type: DataTypes.STRING },
     description: { type: DataTypes.STRING },
     platforms: { type: DataTypes.STRING },
+    background_image: { type: DataTypes.STRING },
     image: { type: DataTypes.STRING },
     rating: { type: DataTypes.STRING },
     released: { type: DataTypes.STRING },
